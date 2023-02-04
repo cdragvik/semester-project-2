@@ -1,21 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-</head>
-<body>
-    <header>
-
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
-</body>
-</html>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Auction House | Login</title>
+            <link rel="stylesheet" href="/dist/css/styles.css">
+            <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        </head>
+        <body class="d-flex flex-column min-vh-100 bg-primary" >
+            <header>
+        
+            </header>
+            <main>
+                <div class="pt-5 pb-5 text-center">
+                   <h1>Welcome to Auction House</h1>
+                   <p>
+                    Join the world's best auctions for one-of-a-kind art, antiques & luxury goods.</p>
+                </div>
+        
+                <div class="pt-3 text-center card col-lg-4 col-md-7 mx-auto">
+                    <h2 class="text-center">Log in</h2>
+                    <form id="loginForm">
+        
+                        <div class="form-group m-3">
+                            <label for="">Email address</label>
+                            <input type="email" name="email" class="form-control" placeholder="Email (@stud.noroff.no or @noroff.no)" required pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Only @(stud.)noroff.no domains are allowed to register."> 
+                        </div>
+              
+                        <div class="form-group m-3">
+                            <label for="">Password</label>
+                            <input type="password" name="password" class="form-control" placeholder="*****" requiredminlength="8">
+                        </div>
+              
+                        <button type="submit" class="btn btn-light">Log in!</button>
+                    </form>
+                    <hr class="m-4" />
+                    <p>Don't have an account? <a class="btn btn-primary" href="/profile/signup/index.html">Sign up!</a></p>
+                </div>
+                
+            </main>
+            <footer class="bg-light mt-auto text-center p-2">
+               <p>&copy; Designed and built by Christiane Nanette Dragvik</p>
+            </footer>
+        </body>
+        </html>

@@ -1,7 +1,4 @@
-// BS variables overrides
+
+@import "../../node_modules/bootstrap/scss/functions";
 @import "variables";
-
-// BS styles
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
-// Custom styles 
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
