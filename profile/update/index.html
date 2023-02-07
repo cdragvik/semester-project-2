@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction House | Listing</title>
+    <link rel="stylesheet" href="/dist/css/styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.js">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <header>
+
+        <nav class="navbar navbar-expand-md bg-secondary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/listings/index.html"><p>Auction House</p></a>
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="/listings/index.html">Listings</a>
+                  <a class="nav-link" href="/profile/index.html">My profile</a>
+                  <button class="btn btn-light">Log out</button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="d-flex m-auto col-9">
+
+        <div class="card col-12 p-4">
+            <h1>Edit profile</h1>
+  
+            <!-- Form for editing your own profile. Only able to edit banner and avatar. -->
+  
+            <form id="editProfile">
+  
+              <div class="form-group m-3">
+                <label for="">Name</label>
+                <input class="form-control" type="text" disabled name="name">
+              </div>
+      
+              <div class="form-group m-3">
+                <label for="">Email</label>
+                <input class="form-control" type="email" disabled name="email">
+              </div>
+  
+              <div class="form-group m-3">
+                <label for="">Avatar</label>
+                <input type="url" name="avatar" class="form-control">
+              </div>
+  
+              <button class="btn btn-light">Update profile</button>
+            </form>
+          </div>
+
+
+    </main>
+
+
+    <footer class="bg-secondary mt-auto text-center p-2">
+        <p>&copy; Designed and built by Christiane Nanette Dragvik</p>
+   </footer>
+    
+</body>
+</html>

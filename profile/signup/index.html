@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auction House | Login</title>
+    <title>Auction House | Signup</title>
     <link rel="stylesheet" href="/dist/css/styles.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.js">
 </head>
@@ -19,8 +19,8 @@
             <p>Join the world's best auctions for one-of-a-kind art, antiques & luxury goods.</p>
         </div>
         
-        <div class="pt-3 text-center card col-9 col-lg-4 col-md-7 mx-auto">
-            <h2 class="text-center">Log in</h2>
+        <div class="pt-3 text-center card col-9 col-lg-4 col-md-7 mx-auto mb-5">
+            <h2 class="text-center">Sign up</h2>
             <form id="loginForm">
         
                 <div class="form-group m-3">
@@ -32,12 +32,22 @@
                      <label for="">Password</label>
                     <input type="password" name="password" class="form-control" placeholder="*******" requiredminlength="8">
                 </div>
+
+                <div class="form-group m-3">
+                    <label for="">Banner</label>
+                    <input class="form-control" type="url" name="banner">
+                </div>
+  
+                <div class="form-group m-3">
+                    <label for="">Avatar</label>
+                    <input class="form-control" type="url" name="avatar">
+                </div>
               
-                <button type="submit" class="btn btn-light">Log in!</button>
+                <button type="submit" class="btn btn-light">Sign up!</button>
             
             </form>
             <hr class="m-4" />
-            <p>Don't have an account? <a class="btn btn-primary" href="/profile/signup/index.html">Sign up!</a> or <a class="btn btn-primary" href="/listings/index.html">View Listings!</a></p>
+            <p>Already have an account? <a class="btn btn-primary" href="/index.html">Log in!</a></p>
         
         </div>
                 

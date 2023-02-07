@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction House | Listings</title>
+    <link rel="stylesheet" href="/dist/css/styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.js">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+    <header>
+
+        <nav class="navbar navbar-expand-md bg-secondary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/listings/index.html"><p>Auction House</p></a>
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="/listings/index.html">Listings</a>
+                  <a class="nav-link" href="/profile/index.html">My profile</a>
+                  <button class="btn btn-light">Log out</button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    
+    <main>
+
+        <div class="pt-5 pb-5 text-center">
+            <h1>Listings</h1>
+            <p>Paragraph</p>
+        </div>
+
+        <form class="d-flex p-4 m-auto col-md-6 col-8" id="search">
+            <input class="form-control mr-sm-2 p-1" type="text" placeholder="Search" aria-label="Search" name="searchInput" >
+            <button class="btn btn-primary my-2 my-sm-0 p-1" type="submit">Search</button>
+        </form>
+
+        <div id="listings"></div>
+
+    </main>
+    
+
+    <footer class="bg-secondary mt-auto text-center p-2">
+        <p>&copy; Designed and built by Christiane Nanette Dragvik</p>
+   </footer>
+</body>
+</html>

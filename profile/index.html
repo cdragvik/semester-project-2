@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction House | Profile</title>
+    <link rel="stylesheet" href="/dist/css/styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.js">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <header>
+
+        <nav class="navbar navbar-expand-md bg-secondary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/listings/index.html"><p>Auction House</p></a>
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="/listings/index.html">Listings</a>
+                  <a class="nav-link active" href="/profile/index.html">My profile</a>
+                  <button class="btn btn-light">Log out</button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <div class="row d-flex m-2 col-11 m-auto pb-5">
+
+            <!--Profile information-->
+                <!--Avatar-->
+                <!--User name-->
+                <!--Users total credit-->
+                <!--Update profile button-->
+
+            <div class="col-md-4 col-lg-3 pt-5">
+                <div class="card p-3 text-center">
+                    <div class="p-1">
+                        <img src="/img.jpg" style="max-height:400px;" class="img-fluid"> 
+                    </div>
+                    <div class="p-1x">
+                        <h2>Username</h2>
+                        <p>Total credit:</p>
+                        <a href="/profile/update/index.html"><button class="btn btn-light">Update Profile</button></a>
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+
+            <div class="col-md-8 col-lg-9 pt-5">
+
+
+            <!--Form for creating listings-->
+                <!--With title, deadline date, media gallery and description-->
+                <!--Ability to make bid on other users listings-->
+                <!--Bids on listing-->              
+                
+                <form id="createPost" class="card m-auto col-12 p-4">
+
+                    <h2>Post a listing</h2>
+
+                    <div class="form-group mb-3">
+                      <input type="text" name="title" class="form-control" placeholder="Title" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <input type="datetime-local" name="deadline" class="form-control" placeholder="Deadline" required>
+                    </div>
+        
+                    <div class="form-group mb-3">
+                        <textarea  name="body" class="form-control" placeholder="Description..." required></textarea>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <input type="url" name="image" class="form-control" placeholder="Image url">
+                    </div>
+        
+                    <a href=""><button class="btn btn-light">Post Listing</button></a>
+                </form>
+
+            <!--Listings posted by user-->
+
+                <div class="pt-3">
+                    <h1 class="text-center">My listings</h1>
+                    <div id="listings">
+                        <div class="card m-auto col-12 p-4 d-flex flex-row">
+                            <div class="p-4">
+                                <img src="/img.jpg" style="max-width:200px;" class="img-fluid">   
+                            </div>
+                            <div class="p-4">
+                                <h2>Title</h2>
+                                <p>Deadline:</p>
+                                <a href="/listing/index.html"><button class="btn btn-light">Read More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            
+            </div>
+
+        </div>
+
+    </main>
+
+    
+    <footer class="bg-secondary mt-auto text-center p-2">
+        <p>&copy; Designed and built by Christiane Nanette Dragvik</p>
+    </footer>
+    
+</body>
+</html>
