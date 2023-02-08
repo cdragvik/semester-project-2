@@ -21,16 +21,21 @@
         
         <div class="pt-3 text-center card col-9 col-lg-4 col-md-7 mx-auto mb-5">
             <h2 class="text-center">Sign up</h2>
-            <form id="loginForm">
+            <form id="signupForm">
+
+                <div class="form-group m-3">
+                    <label for="">Username</label>
+                    <input type="text" name="name" class="form-control" placeholder="Username" required pattern="^[\w]+$"title="Username must only contain lowercase and uppercase letters, nubmbers and underscore (_). Example: MyUsername_123">
+                  </div>
         
                 <div class="form-group m-3">
                     <label for="">Email address</label>
-                    <input type="email" name="email" class="form-control" placeholder="Email (@stud.noroff.no)" required pattern="^[\w\-.]+@stud.noroff.no$" title="Only @(stud.)noroff.no domains are allowed to register."> 
+                    <input type="email" name="email" class="form-control" placeholder="Email (@stud.noroff.no)" required pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Only @(stud.)noroff.no domains are allowed to register."> 
                 </div>
               
                 <div class="form-group m-3">
                      <label for="">Password</label>
-                    <input type="password" name="password" class="form-control" placeholder="*******" requiredminlength="8">
+                    <input type="password" name="password" class="form-control" placeholder="*******" required minlength="8">
                 </div>
 
                 <div class="form-group m-3">
@@ -55,5 +60,6 @@
     <footer class="bg-secondary mt-auto text-center p-2">
          <p>&copy; Designed and built by Christiane Nanette Dragvik</p>
     </footer>
+    <script src="/src/js/index.mjs" type="module"></script>
 </body>
 </html>
