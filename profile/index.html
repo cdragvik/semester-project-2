@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auction House | Profile</title>
     <link rel="stylesheet" href="/dist/css/styles.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.js">
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
 
@@ -61,7 +60,7 @@
                 <!--Ability to make bid on other users listings-->
                 <!--Bids on listing-->              
                 
-                <form id="createPost" class="card m-auto col-12 p-4">
+                <form id="createListing" class="card m-auto col-12 p-4">
 
                     <h2>Post a listing</h2>
 
@@ -70,36 +69,25 @@
                     </div>
 
                     <div class="form-group mb-3">
-                        <input type="datetime-local" name="deadline" class="form-control" placeholder="Deadline" required>
+                        <input type="datetime-local" name="endsAt" class="form-control" placeholder="Deadline" required>
                     </div>
         
                     <div class="form-group mb-3">
-                        <textarea  name="body" class="form-control" placeholder="Description..." required></textarea>
+                        <textarea  name="description" class="form-control" placeholder="Description..." required></textarea>
                     </div>
 
                     <div class="form-group mb-3">
                         <input type="url" name="image" class="form-control" placeholder="Image url">
                     </div>
         
-                    <a href=""><button class="btn btn-light">Post Listing</button></a>
+                    <button class="btn btn-light" type="submit">Post Listing</button>
                 </form>
 
-            <!--Listings posted by user-->
+            <!--Only listings posted by user-->
 
                 <div class="pt-3">
                     <h1 class="text-center">My listings</h1>
-                    <div id="listings">
-                        <div class="card m-auto col-12 p-4 d-flex flex-row">
-                            <div class="p-4">
-                                <img src="/img.jpg" style="max-width:200px;" class="img-fluid">   
-                            </div>
-                            <div class="p-4">
-                                <h2>Title</h2>
-                                <p>Deadline:</p>
-                                <a href="/listing/index.html"><button class="btn btn-light">Read More</button></a>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="listings"></div>
                 </div>
 
 
@@ -114,6 +102,8 @@
     <footer class="bg-secondary mt-auto text-center p-2">
         <p>&copy; Designed and built by Christiane Nanette Dragvik</p>
     </footer>
+
+    <script src="/src/js/index.mjs" type="module"></script>
     
 </body>
 </html>
