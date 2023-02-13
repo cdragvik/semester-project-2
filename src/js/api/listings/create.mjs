@@ -13,8 +13,8 @@ export async function createListing(listingData) {
         body: JSON.stringify(listingData)
     })
 
-    
+    alert("You have created a listing")
     return await response.json();
-
+    
 
 }
