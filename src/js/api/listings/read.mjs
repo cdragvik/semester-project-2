@@ -3,14 +3,14 @@ import { BASE_URL } from "../constants.mjs";
 
 const action = "/listings";
 
-const tags = "_tag=ola";
+const tags = "_tag=";
 
 // Get all listings
 // Needs to include tag to display ony wine
 
 export async function readListings() {
         
-    const getListingsURL = `${BASE_URL}${action}?${tags}`;
+    const getListingsURL = `${BASE_URL}${action}?sort=created&sortOrder=desc`;
         
     const response = await authFetch (getListingsURL)
     
