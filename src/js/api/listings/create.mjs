@@ -15,6 +15,4 @@ export async function createListing(listingData) {
 
     alert("You have created a listing")
     return await response.json();
-    
-
 }
