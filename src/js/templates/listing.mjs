@@ -8,16 +8,11 @@ export function listingTemplate(listingData) {
     <br>
     <p>Ends at: ${listingData.endsAt}</p>
     <p>Tags: ${listingData.tags}</p>
-    <button class="btn btn-primary">Read more</button>
+    <p>Number of bids: ${listingData._count.bids}</p>
+    <a href="/listing/index.html?id=${listingData.id}"><button class="btn btn-primary">Read more</button></a>
 </div>`
 
 return readListing;
-}
-
-
-export function renderListingTemplate(listingData, parent) {
-    parent.append(listingTemplate(listingData))
-
 }
 
 export function renderListingTemplates(listingDataList, parent) {
