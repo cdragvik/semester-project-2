@@ -7,5 +7,8 @@ import * as listings from "./listing/index.mjs";
 listeners.setRegisterFormListener()
 listeners.setLoginFormListener();
 listeners.setCreateFormListener();
+
+
 listings.getAllListings();
+listings.getListingById();
 

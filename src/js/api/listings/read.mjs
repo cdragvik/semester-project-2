@@ -2,15 +2,15 @@ import { authFetch } from "../authFetch.mjs";
 import { BASE_URL } from "../constants.mjs";
 
 const action = "/listings";
-
-const tags = "_tag=";
+const flag = "?_seller=true&_bids=true";
+const tags = "_tag=art";
 
 // Get all listings
 // Needs to include tag to display ony wine
 
 export async function readListings() {
         
-    const getListingsURL = `${BASE_URL}${action}?sort=created&sortOrder=desc`;
+    const getListingsURL = `${BASE_URL}${action}?sort=created&sortOrder=desc&${tags}`;
         
     const response = await authFetch (getListingsURL)
     
@@ -21,9 +21,13 @@ export async function readListings() {
 
 // Get specific listing
 
-export async function readListing(id) {
+export async function readListing() {
 
-    const getListingURL = `${BASE_URL}${action}/${id}`;
+    const queryString = document.location.search; 
+    const params = new URLSearchParams(queryString); 
+    const id = params.get("id");
+
+    const getListingURL = `${BASE_URL}${action}/${id}${flag}`;
         
     const response = await authFetch (getListingURL)
     
