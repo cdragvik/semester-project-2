@@ -2,8 +2,6 @@ export function singleListingTemplate(listingData) {
 
     
     const readListing = document.createElement("div");
-    
-    for (let i=0; i < listingData.bids.length; i++) {
 
         readListing.innerHTML = `
         
@@ -29,8 +27,8 @@ export function singleListingTemplate(listingData) {
 
                 <h3>Bids</h3>
                     <div class="card bg-light p-3">
-                        <p>Bidder: ${listingData.bids[i].bidderName}</p>
-                        <p>Amount: ${listingData.bids[i].amount}</p>
+                        <p>Bidder: ${listingData.bids[0].bidderName}</p>
+                        <p>Amount: ${listingData.bids[0].amount}</p>
                     </div>
 
             </div>
@@ -38,7 +36,7 @@ export function singleListingTemplate(listingData) {
 
     return readListing;
     }
-}
+
 
 export function renderSingleListing(listingDataList, parent) {
     parent.innerHTML = ""
