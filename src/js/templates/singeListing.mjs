@@ -22,15 +22,8 @@ export function singleListingTemplate(listingData) {
                     
                 </div>
                 
+                <a href="/bid/index.html?id=${listingData.id}"><button class="btn btn-primary">View bids</button></a>
                 <a href="/bid/index.html?id=${listingData.id}"><button class="btn btn-primary">Bid on item</button></a>
-                <hr/>
-
-                <h3>Bids</h3>
-                    <div class="card bg-light p-3">
-                        <p>Bidder: ${listingData.bids[0].bidderName}</p>
-                        <p>Amount: ${listingData.bids[0].amount}</p>
-                    </div>
-
             </div>
         </div>`;
 
@@ -42,3 +35,12 @@ export function renderSingleListing(listingDataList, parent) {
     parent.innerHTML = ""
     parent.append(singleListingTemplate(listingDataList))
 }
+
+
+/** 
+<h3>Bids</h3>
+<div class="card bg-light p-3">
+    <p>Bidder: ${listingData.bids[0].bidderName}</p>
+    <p>Amount: ${listingData.bids[0].amount}</p>
+</div>
+*/
