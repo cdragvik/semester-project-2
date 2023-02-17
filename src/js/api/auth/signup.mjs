@@ -16,6 +16,7 @@ export async function register(profile) {
   })
 
   const result = await response.json()
-  alert("You are now registered")
+  alert("You are now registered, proceed to log in!")
+  window.location.replace("../../../../index.html")
   return result
 }

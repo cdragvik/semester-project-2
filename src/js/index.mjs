@@ -10,7 +10,10 @@ listeners.setLoginFormListener();
 listeners.setCreateFormListener();
 
 
+
 listings.getAllListings();
 listings.getListingById();
 
 signout();
+
+listeners.setUpdateProfileListener();
