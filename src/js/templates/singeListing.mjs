@@ -1,5 +1,6 @@
 export function singleListingTemplate(listingData) {
 
+    const endsAt = new Date(listingData.endsAt).toLocaleString();
     
     const readListing = document.createElement("div");
 
@@ -17,7 +18,7 @@ export function singleListingTemplate(listingData) {
                     <h1>${listingData.title}</h1>
                     <p>Seller: ${listingData.seller.name}</p>
                     <p>Description: ${listingData.description}</p>
-                    <p>Deadline: ${listingData.endsAt}</p>
+                    <p>Deadline: ${endsAt}</p>
                     <p>Number of bids: ${listingData._count.bids}</p>
                     
                 </div>
