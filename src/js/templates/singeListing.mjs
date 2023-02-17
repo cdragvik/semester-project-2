@@ -20,7 +20,6 @@ export function singleListingTemplate(listingData) {
                     <p>Description: ${listingData.description}</p>
                     <p>Deadline: ${endsAt}</p>
                     <p>Number of bids: ${listingData._count.bids}</p>
-                    
                 </div>
                 
                 <a href="/bid/index.html?id=${listingData.id}"><button class="btn btn-primary">View bids</button></a>
