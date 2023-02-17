@@ -1,5 +1,5 @@
-import { BASE_URL } from "../api/constants.mjs"; 
-import { authFetch } from "../api/authFetch.mjs";
+import { BASE_URL } from "../../api/constants.mjs"; 
+import { authFetch } from "../../api/authFetch.mjs";
 
 
 const action = "/profiles";
