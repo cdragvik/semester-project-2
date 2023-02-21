@@ -3,3 +3,54 @@
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+
+
+.nav-link {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+.active {
+    color: #ffffff;
+}
+
+
+* {
+    margin: 0;
+    font-family: 'Avant Garde';
+}
+
+
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    padding: 10px 0px;
+}
+
+p{
+    font-size: 15px;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.welcome {
+    font-size: 25px;
+}
+
+footer {
+    color: #ffffff;
+    padding: 20px;
+    
+}
+
+.navbar-brand {
+    padding: 10px;
+}

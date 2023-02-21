@@ -9,9 +9,9 @@ export function listingTemplate(listingData) {
     <img src=${listingData?.media?.[0] ?? "shorturl.at/mnrG"}/>
     <br>
     <p>Ends at: ${endsAt}</p>
-    <div>Tags: ${listingData.tags}</div>
+    <div><p>Tags: ${listingData.tags}</p></div>
     <p>Number of bids: ${listingData._count.bids}</p>
-    <a href="/listing/index.html?id=${listingData.id}"><button class="btn btn-primary">Read more</button></a>
+    <a href="/listing/index.html?id=${listingData.id}"><button class="btn btn-secondary">Read more</button></a>
 </div>`
 
 return readListing;

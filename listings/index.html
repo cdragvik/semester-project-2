@@ -8,41 +8,38 @@
     <link rel="stylesheet" href="/dist/css/styles.css">
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
+    
     <header>
-
         <nav class="navbar navbar-expand-md bg-secondary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="/listings/index.html"><img src="/FineWine.png" style="max-width: 300px;"></a>
+              <a class="navbar-brand" href="/listings/index.html"><img src="/FineWine-auction.png" style="max-width: 300px;"></a>
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="/listings/index.html">Listings</a>
+                  <a class="nav-link" href="/listings/index.html">Listings</a>
                   <a class="nav-link" href="/profile/index.html">My profile</a>
-                  <a href="/index.html" id="sign-out"><button class="btn btn-light">Log out</button></a>
+                  <a href="/index.html" id="sign-out" class="p-1"><button class="btn btn-light">Log out</button></a>
                 </div>
             </div>
         </nav>
-
     </header>
     
     <main>
 
-        <div class="pt-5 pb-5 text-center">
+        <div class="pt-5 pb-3 text-center">
             <h1>Listings</h1>
-            <p>Paragraph</p>
+            <p class="welcome">Hundreds of rare and mature fine wines at your fingertips</p>
         </div>
 
         <form class="d-flex p-4 m-auto col-md-6 col-8" id="search">
             <input class="form-control mr-sm-2 p-1" type="text" placeholder="Search" aria-label="Search" name="searchInput" >
-            <button class="btn btn-primary my-2 my-sm-0 p-1" type="submit">Search</button>
+            <button class="btn btn-secondary my-2 my-sm-0 p-1" type="submit">Search</button>
         </form>
 
-        <div class="row row-cols-1 row-cols-md-2 g-4 my-1 col-10 m-auto" id="listings">
-            <!--List of listings thumbnails-->
-        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 my-1 col-10 m-auto" id="listings"></div>
 
     </main>
     
 
-    <footer class="bg-secondary mt-auto text-center p-2">
+    <footer class="bg-secondary mt-auto text-center p-4">
         <p>&copy; Designed and built by Christiane Nanette Dragvik</p>
    </footer>
    <script src="/src/js/index.mjs" type="module"></script>

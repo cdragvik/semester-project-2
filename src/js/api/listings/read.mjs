@@ -6,7 +6,6 @@ const flag = "?_seller=true&_bids=true";
 const tags = "_tag=finewine";
 
 // Get all listings
-// Needs to include tag to display ony wine
 
 export async function readListings() {
         
@@ -37,6 +36,7 @@ export async function readListing() {
 
 
 // Get listings by search 
+// Able to search by title
 
 export async function getListingsBySearch(search) {
 
