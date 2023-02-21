@@ -18,6 +18,4 @@ export function fillProfileData() {
 
     const profileAvatarContainer = document.querySelector("#userAvatar");
     profileAvatarContainer.innerHTML = `<img src="${profile.avatar}" style="max-width:100%;"> `;
-
-
 }
