@@ -1,6 +1,9 @@
 export function listingTemplate(listingData) {
 
     const endsAt = new Date(listingData.endsAt).toLocaleString();
+    const loader = document.querySelector(".loader");
+
+    loader.style.display ="none";
 
     const readListing = document.createElement("div"); 
     readListing.classList.add("listings")

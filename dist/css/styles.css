@@ -10816,4 +10816,31 @@ footer {
   padding: 10px;
 }
 
+.loader {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 100px auto;
+}
+
+.loader:after {
+  content: " ";
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 8px solid #540000;
+  border-color: transparent #540000 transparent #540000;
+  animation: loader 2s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
