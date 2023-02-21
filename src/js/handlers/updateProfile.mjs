@@ -1,12 +1,12 @@
 import { getProfile, updateProfile } from "../../js/api/profiles/index.mjs";
-import { load } from "../storage/index.mjs";
+import { load, remove, save } from "../storage/index.mjs";
 
 
 export async function setUpdateProfileListener() {
     const form = document.querySelector("#updateProfile");
     
     if (form) {
-        const {name, email} = load("profile")
+        const {name, email, credits} = load("profile")
         form.name.value = name; 
         form.email.value = email;
 
@@ -27,6 +27,10 @@ export async function setUpdateProfileListener() {
 
             profile.name = name; 
             profile.email = email; 
+
+            // Update local storage 
+            remove("profile")
+            save("profile", {...profile, credits})
             
             // Send it to the API
             updateProfile(profile)

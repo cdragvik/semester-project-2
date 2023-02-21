@@ -17,9 +17,7 @@ export function fillProfileData() {
     }
 
     const profileAvatarContainer = document.querySelector("#userAvatar");
-    if (profileAvatarContainer) {
-        const avatar = profile.avatar
-        profileAvatarContainer.append(avatar)
-    }
+    profileAvatarContainer.innerHTML = `<img src="${profile.avatar}" style="max-width:100%;"> `;
+
 
 }

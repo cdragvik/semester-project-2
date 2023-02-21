@@ -29,36 +29,24 @@
 
         <div class="row d-flex m-2 col-11 m-auto pb-5">
 
-            <!--Profile information-->
-                <!--Avatar-->
-                <!--User name-->
-                <!--Users total credit-->
-                <!--Update profile button-->
-
             <div class="col-md-4 col-lg-3 pt-5">
                 <div class="card p-3 text-center">
+        
                     <div class="p-1" id="userAvatar">
-                        <img> 
+                        <img src="userAvatar" id="userAvatar"> 
                     </div>
-                    <div class="p-1x">
+                    <div class="p-1">
                         <h2 id="userName"></h2>
-                        <p id="userCredit">Total credit amout: </p>
+                        <p id="userCredit">Total credit: </p>
                         <a href="/profile/update/index.html"><button class="btn btn-light">Update Profile</button></a>
                     </div>
 
                 </div>
-
             </div>
             
 
 
-            <div class="col-md-8 col-lg-9 pt-5">
-
-
-            <!--Form for creating listings-->
-                <!--With title, deadline date, media gallery and description-->
-                <!--Ability to make bid on other users listings-->
-                <!--Bids on listing-->              
+            <div class="col-md-8 col-lg-9 pt-5">            
                 
                 <form id="createListing" class="card m-auto col-12 p-4">
 
@@ -76,6 +64,13 @@
                         <textarea  name="description" class="form-control" placeholder="Description..." required></textarea>
                     </div>
 
+
+                    <!--TAGS AND LISTING DOES NOT WORK-->
+
+                    <div class="form-group mb-3">
+                        <input type="test" name="tags" class="form-control" placeholder="Tags">
+                    </div>
+
                     <div class="form-group mb-3">
                         <input type="url" name="media" class="form-control" placeholder="Image url">
                     </div>
@@ -83,10 +78,11 @@
                     <a ><button class="btn btn-light" type="submit">Post Listing</button></a>
                 </form>
 
-            <!--Only listings posted by user-->
+                
+                <!--DISPLAY ONLY LISTINGS BY USER-->
 
                 <div class="pt-3">
-                    <h1 class="text-center">My listings</h1>
+                    <h1 class="text-center">Listings by me</h1>
                     <div id="listings"></div>
                 </div>
 

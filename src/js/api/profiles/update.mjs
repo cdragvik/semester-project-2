@@ -17,3 +17,7 @@ export async function updateProfile(profileData) {
     window.location.replace("../../../../profile")
     return await response.json(); 
 }
+
+
+
+// When updating profile, it does not update in localstorage before logging out and logging in againa
