@@ -9,9 +9,11 @@ export async function setCreateFormListener() {
       const form = event.target;
       const formData = new FormData(form);
       const listing = Object.fromEntries(formData.entries())
+
+      const images = listing.media.split(", ")
+      const tags = listing.tags.split(", ")
       
-      // Send it to the API
-      createListing(listing)
+      createListing({...listing, media: images, tags: tags})
 
     })
   }

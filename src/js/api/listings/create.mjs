@@ -14,5 +14,6 @@ export async function createListing(listingData) {
     })
 
     alert("You have created a listing")
+    window.location.reload()
     return await response.json();
 }

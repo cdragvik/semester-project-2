@@ -3,7 +3,7 @@ import { BASE_URL } from "../constants.mjs";
 
 const action = "/listings";
 const flag = "?_seller=true&_bids=true";
-const tags = "";
+const tags = "_tag=finewine";
 
 // Get all listings
 // Needs to include tag to display ony wine
