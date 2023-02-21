@@ -3,6 +3,7 @@ export function listingTemplate(listingData) {
     const endsAt = new Date(listingData.endsAt).toLocaleString();
 
     const readListing = document.createElement("div"); 
+    readListing.classList.add("listings")
     readListing.innerHTML = `<div class="card p-3 mb-3">
     <h2>${listingData.title}</h2>
     <img src=${listingData?.media?.[0] ?? "shorturl.at/mnrG"}/>
@@ -17,5 +18,8 @@ return readListing;
 }
 
 export function renderListingTemplates(listingDataList, parent) {
-    parent.append(...listingDataList.map(listingTemplate))
+    parent.innerHTML = ""
+    listingDataList.map(data => {
+        parent.append(listingTemplate(data))
+    })
 };

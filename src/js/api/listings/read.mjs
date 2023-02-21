@@ -34,3 +34,25 @@ export async function readListing() {
     return await response.json(); 
 
 }
+
+
+// Get listings by search 
+
+export async function getListingsBySearch(search) {
+
+    const getListingsURL = `${BASE_URL}${action}?sort=created&sortOrder=desc&${tags}`; 
+
+    const response = await authFetch(getListingsURL)
+
+    const result = await response.json(); 
+
+    const lowerCasedSearch = search.toLowerCase()
+
+    let filtered = result.filter(listing => 
+        listing.title.toLowerCase().includes(lowerCasedSearch)
+    )
+
+    return filtered
+
+
+}
