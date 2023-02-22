@@ -1,5 +1,6 @@
 import { BASE_URL } from "../../api/constants.mjs"; 
 import { authFetch } from "../../api/authFetch.mjs";
+import { save } from "../../storage/index.mjs";
 
 const action = "/profiles";
 const method = "put";
@@ -13,11 +14,9 @@ export async function updateProfile(profileData) {
         body: JSON.stringify(profileData)
     })
 
+    const updatedProfile = await response.json(); 
+    save ("profile", updatedProfile)
     alert("You have successfully updated your avatar!")
     window.location.replace("../../../../profile")
-    return await response.json(); 
+    return updatedProfile; 
 }
-
-
-
-// When updating profile, it does not update in localstorage before logging out and logging in againa

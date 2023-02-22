@@ -13,6 +13,7 @@ listeners.setRegisterFormListener()
 listeners.setLoginFormListener();
 listeners.setCreateFormListener();
 listeners.setSearchFormListener();
+listeners.setBidFormListener();
 
 
 

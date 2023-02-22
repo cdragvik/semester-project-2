@@ -24,17 +24,6 @@ export function singleListingTemplate(listingData) {
                 </div>
                 <a href="/listing/bid/index.html?id=${listingData.id}"><button class="btn btn-secondary">Bid on item</button></a>
             </div>
-            </div>
-        
-            <div class="m-auto mt-3 col-11 col-md-9 col-lg-8 pb-5">
-
-            <h2>Bids made on this item:</h2>
-
-            <div class="card p-3 pb-0 mt-2">
-                <p>Bidder: ${listingData.bids.bidderName} </p>
-                <p>Amount: ${listingData.bids.amount} </p>
-            </div>
-
             </div>`;
 
         return readListing;
