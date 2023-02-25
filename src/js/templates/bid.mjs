@@ -5,7 +5,8 @@ export function bidTemplate(bidData) {
         const loader = document.querySelector(".loader");
         loader.style.display ="none";
 
-        readBid.innerHTML = `<div class="card p-3 pb-0 mt-2">
+        readBid.innerHTML = `
+        <div class="card p-3 pb-0 mt-2">
             <p>Bidder: ${bidData.bidderName} </p>
             <p>Amount: ${bidData.amount} </p>
         </div>`; 

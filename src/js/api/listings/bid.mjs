@@ -20,7 +20,7 @@ export async function bidOnListing(bidData) {
     })
 
     alert("You have bid on a listing")
-    window.location.reload()
+    window.location.replace("../../../profile")
     save("profile", {...profile, credits: profile.credits - +bidData.amount})
     return await response.json(); 
 }

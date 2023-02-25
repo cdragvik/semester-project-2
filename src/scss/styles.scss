@@ -18,31 +18,27 @@
 
 * {
     margin: 0;
-    font-family: 'Avant Garde';
+    font-weight: lighter;
 }
 
 
 h1 {
     font-size: 40px;
     text-transform: uppercase;
-    padding-bottom: 20px;
 }
 
 h2 {
     font-size: 25px;
     padding: 10px 0px;
+    text-transform: uppercase;
 }
 
 p{
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .btn:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.welcome {
-    font-size: 25px;
 }
 
 footer {
@@ -55,7 +51,22 @@ footer {
     padding: 10px;
 }
 
+.welcome {
+    position: relative;
+    text-align: center;
+}
 
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffffbc;
+}
+
+.paragraph {
+    font-size: 30px;
+}
 
 // Loading indicator 
 
