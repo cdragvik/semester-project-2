@@ -6,7 +6,6 @@ const flag = "?_seller=true&_bids=true";
 const tags = "_tag=finewine";
 
 // Get all listings
-
 export async function readListings() {
         
     const getListingsURL = `${BASE_URL}${action}?sort=created&sortOrder=desc&${tags}`;
@@ -16,10 +15,7 @@ export async function readListings() {
     return await response.json(); 
 }
 
-
-
 // Get specific listing
-
 export async function readListing() {
 
     const queryString = document.location.search; 
@@ -34,10 +30,8 @@ export async function readListing() {
 
 }
 
-
 // Get listings by search 
-// Able to search by title
-
+// User is able to search by title
 export async function getListingsBySearch(search) {
 
     const getListingsURL = `${BASE_URL}${action}?sort=created&sortOrder=desc&${tags}`; 
@@ -53,6 +47,4 @@ export async function getListingsBySearch(search) {
     )
 
     return filtered
-
-
 }

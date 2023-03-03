@@ -4,17 +4,26 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 
+// Navigation 
 
 .nav-link {
     color: #ffffff;
     font-size: 20px;
 }
 
-
-.active {
-    color: #ffffff;
+.navbar-brand {
+    padding: 10px;
 }
 
+
+// Footer 
+
+footer {
+    padding: 20px;  
+}
+
+
+// Custom fonts
 
 * {
     margin: 0;
@@ -40,15 +49,8 @@ p{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-footer {
-    color: #ffffff;
-    padding: 20px;
-    
-}
 
-.navbar-brand {
-    padding: 10px;
-}
+// Welcome page
 
 .welcome {
     position: relative;
@@ -65,10 +67,11 @@ footer {
 
 .paragraph {
     font-size: 30px;
+    font-family:fantasy;
 }
 
-// Loading indicator 
 
+// Loading indicator 
 
 .loader {
     display: block;

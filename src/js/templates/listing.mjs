@@ -1,3 +1,5 @@
+import { errorMessage } from "../error/error.mjs";
+
 export function listingTemplate(listingData) {
     
     const readListing = document.createElement("div"); 
@@ -23,7 +25,7 @@ export function listingTemplate(listingData) {
         return readListing;
     
     } catch(error){
-        readListing.innerHTML = `<div>Ups! An error has occured. Please try again later.</div>`;
+       errorMessage(); 
     }
 }
 

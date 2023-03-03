@@ -19,8 +19,8 @@ export async function bidOnListing(bidData) {
         body: JSON.stringify({amount: +bidData.amount})
     })
 
-    alert("You have bid on a listing")
-    window.location.replace("../../../listings/")
+    alert("You have successfully made a bid to this listing")
+    window.location.reload();
     save("profile", {...profile, credits: profile.credits - +bidData.amount})
     return await response.json(); 
 }

@@ -1,3 +1,5 @@
+import { errorMessage } from "../error/error.mjs";
+
 export function bidTemplate(bidData) {
     const readBid = document.createElement("div"); 
 
@@ -14,7 +16,7 @@ export function bidTemplate(bidData) {
         return readBid; 
         
     } catch(error){
-        readBid.innerHTML = `<div>Ups! An error has occured. Please try again later.</div>`;
+        errorMessage();
     }
 }
 

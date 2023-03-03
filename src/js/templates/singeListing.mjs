@@ -1,3 +1,5 @@
+import { errorMessage } from "../error/error.mjs";
+
 export function singleListingTemplate(listingData) {
 
     const endsAt = new Date(listingData.endsAt).toLocaleString();
@@ -22,14 +24,13 @@ export function singleListingTemplate(listingData) {
                     <p>Number of bids: ${listingData._count.bids}</p>
                     <p>Description: ${listingData.description}</p>
                 </div>
-                <a href="/listing/bid/index.html?id=${listingData.id}"><button class="btn btn-secondary">Bid on item</button></a>
             </div>
             </div>`;
 
         return readListing;
 
     } catch(error) {
-        readListing.innerHTML = `<div>Ups! An error has occured. Please try again later.</div>`;
+        errorMessage(); 
     }
 
 }
