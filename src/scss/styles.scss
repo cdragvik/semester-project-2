@@ -63,11 +63,17 @@ p{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #ffffffbc;
+    border-radius: 0.375rem;
 }
 
 .paragraph {
     font-size: 30px;
-    font-family:fantasy;
+}
+
+// Custom styles
+
+.card {
+    border: none;
 }
 
 
