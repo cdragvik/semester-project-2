@@ -11,10 +11,13 @@
     font-size: 20px;
 }
 
+.nav-link:hover {
+    color: #858585;
+}
+
 .navbar-brand {
     padding: 10px;
 }
-
 
 // Footer 
 
@@ -27,9 +30,8 @@ footer {
 
 * {
     margin: 0;
-    font-weight: lighter;
+    font-family: 'Arial Narrow Bold', sans-serif, 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 
 h1 {
     font-size: 40px;
@@ -41,8 +43,8 @@ h2 {
     padding: 10px 0px;
 }
 
-p{
-    font-size: 20px;
+label {
+    padding: 5px;
 }
 
 .btn:hover {

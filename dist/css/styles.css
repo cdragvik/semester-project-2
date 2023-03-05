@@ -10775,6 +10775,10 @@ textarea.form-control-lg {
   font-size: 20px;
 }
 
+.nav-link:hover {
+  color: #858585;
+}
+
 .navbar-brand {
   padding: 10px;
 }
@@ -10785,7 +10789,7 @@ footer {
 
 * {
   margin: 0;
-  font-weight: lighter;
+  font-family: "Arial Narrow Bold", sans-serif, "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h1, .h1 {
@@ -10798,8 +10802,8 @@ h2, .h2 {
   padding: 10px 0px;
 }
 
-p {
-  font-size: 20px;
+label {
+  padding: 5px;
 }
 
 .btn:hover {
