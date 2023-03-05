@@ -10,15 +10,26 @@
     </head>
     <body class="d-flex flex-column min-vh-100 bg-light">
         
-        <header>
+        <header class="sticky-top">
             <nav class="navbar navbar-expand-md bg-secondary">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="/listings/index.html"><img src="/FineWine-auction.png" style="max-width: 300px;"></a>
-                    <div class="navbar-nav">
-                      <a class="nav-link" href="/listings/index.html">Listings</a>
-                      <a class="nav-link" href="/profile/index.html">My profile</a>
-                      <a href="/index.html" id="sign-out" class="p-1"><button class="btn btn-light">Log out</button></a>
-                    </div>
+                    <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/listings/index.html">Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile/index.html">My profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/index.html" id="sign-out" class="p-1"><button class="btn btn-light">Log out</button></a>
+                    </li>
+                  </ul>
+                  <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </div>
                 </div>
             </nav>
         </header>
@@ -94,6 +105,7 @@
     </footer>
 
     <script src="/src/js/index.mjs" type="module"></script>
+    <script src="/src/js/hamburger/hamburger.mjs" type="module"></script>
     
 </body>
 </html>
