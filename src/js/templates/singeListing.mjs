@@ -18,7 +18,7 @@ export function singleListingTemplate(listingData) {
 
             <div class="p-4 col-6">
                 <div>
-                    <h1>${listingData.title}</h1>
+                    <h2>${listingData.title}</h2>
                     <p>Seller: ${listingData.seller.name}</p>
                     <p>Deadline: ${endsAt}</p>
                     <p>Number of bids: ${listingData._count.bids}</p>
